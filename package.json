@@ -1,0 +1,41 @@
+{
+  "name": "producto-api",
+  "version": "1.0.0",
+  "description": "expressJs backend to products",
+  "main": "app.js",
+  "scripts": {
+    "start": "node ./bin/www",
+    "start-dev": "nodemon index.js",
+    "test": "cross-env NODE_ENV=test jest --testTimeout=10000",
+    "pretest": "cross-env NODE_ENV=test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/byrond27/producto-api.git"
+  },
+  "author": "Byron Dominguez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/byrond27/producto-api/issues"
+  },
+  "homepage": "https://github.com/byrond27/producto-api#readme",
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "^4.16.4",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1",
+    "pug": "2.0.0-beta11"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "jest": "^25.3.0",
+    "supertest": "^4.0.2"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  }
+}
