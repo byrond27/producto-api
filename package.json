@@ -7,7 +7,9 @@
     "start": "node ./bin/www",
     "start-dev": "nodemon index.js",
     "test": "cross-env NODE_ENV=test jest --testTimeout=10000",
-    "pretest": "cross-env NODE_ENV=test"
+    "pretest": "cross-env NODE_ENV=test",
+    "build-sass": "node-sass ./resources/sass/style.scss ../public/stylesheets/style.css",
+    "watch-sass": "node-sass -e ./resources/sass/style.scss ../public/stylesheets/style.css"
   },
   "repository": {
     "type": "git",
@@ -25,7 +27,8 @@
     "express": "^4.17.1",
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1",
-    "pug": "2.0.0-beta11"
+    "pug": "2.0.0-beta11",
+    "sass": "^1.26.3"
   },
   "devDependencies": {
     "cross-env": "^7.0.2",
